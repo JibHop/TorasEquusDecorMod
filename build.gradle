@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '1.0'
+version = '0.0.1'
 group = 'com.equus.tedm' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'tedm'
 
