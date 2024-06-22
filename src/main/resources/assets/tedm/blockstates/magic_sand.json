@@ -1,5 +1,5 @@
 {
-  "varients": {
-    "": {"model": "tedm:block/magic_sand"}
+  "variants": {
+    "": {"model": "tedm:block/magic_sand" }
   }
 }
