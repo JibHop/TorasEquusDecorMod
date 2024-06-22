@@ -1,5 +1,6 @@
 package com.equus.torasequusdecormod;
 
+import com.equus.torasequusdecormod.block.ModBlocks;
 import com.equus.torasequusdecormod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
@@ -24,6 +25,7 @@ public class TorasEquusDecorMod
         eventBus.addListener(this::setup);
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
