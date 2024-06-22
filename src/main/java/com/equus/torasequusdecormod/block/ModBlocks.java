@@ -1,6 +1,7 @@
 package com.equus.torasequusdecormod.block;
 
 import com.equus.torasequusdecormod.TorasEquusDecorMod;
+import com.equus.torasequusdecormod.item.ModCreativeModeTab;
 import com.equus.torasequusdecormod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TorasEquusDecorMod.MOD_ID);
 
     public static final RegistryObject<Block> MAGIC_SAND = registerBlock("magic_sand",
-            () -> new Block(BlockBehaviour.Properties.of(Material.SAND)), CreativeModeTab.TAB_BUILDING_BLOCKS);
+            () -> new Block(BlockBehaviour.Properties.of(Material.SAND)), ModCreativeModeTab.TEDM_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

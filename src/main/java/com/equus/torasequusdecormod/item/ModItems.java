@@ -1,7 +1,6 @@
 package com.equus.torasequusdecormod.item;
 
 import com.equus.torasequusdecormod.TorasEquusDecorMod;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,9 +12,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TorasEquusDecorMod.MOD_ID);
 
     public static final RegistryObject<Item> Brush = ITEMS.register("brush",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEDM_TAB)));
     public static final RegistryObject<Item> CurryComb = ITEMS.register("currycomb",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TEDM_TAB)));
 
 
     public static void register(IEventBus eventBus){
